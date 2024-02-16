@@ -6,86 +6,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
 
+    <!-- css file -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- google fonts, lato, pt sans, fredericka the great -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+
 </head>
 
 <body>
     <div class="container">
-        <header>
-            <h1>
-                Teona Toronjadze
-            </h1>
+        <header class="header">
+            <div class="logo_wrapper">
+                <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
+            </div>
+            <nav class="top_nav">
+                <div class="dropdown_menu"><img src="assets/menu line.svg" alt="dropdown-menu-icon"></div>
+                <ul class="nav">
+                    <li><a href="#">About me</a></li>
+                    <li><a href="#skills">skills</a></li>
+                    <li><a href="#contact">Contact me</a></li>
+                    <li><button class="button">resume <img src="assets/img/download.svg" alt="arrow-icon"></button></li>
+                </ul>
+            </nav>
         </header>
-        <div class="contant_wrapper">
-            <div class="about_me">
-                <h2>About Me</h2>
-                <p>I decided to change my profession a while ago and actively focused on learning Front-End Development
-                    from the online resources. I am motivated and hard-working person, looking for new challenges.</p>
-            </div>
-            <div class="contact_info_wrapper">
-                <h2 class="contact_info">contact Info</h2>
-                <address>
-                    <a href="tel:+995595809061"><img src="img/free-phone-icon-1-thumb.png" alt="">+995595809061</a>
-                    <a href="mailto:toronajdze.teona@gmaill.com"><img src="img/png-transparent-email-email-thumbnail.png" alt="">toronajdze.teona@gmaill.com</a>
-                    <a href="https://github.com/teotoro" target="_blank"><img src="img/png-transparent-computer-icons-website-icon-text-globe-symmetry-thumbnail.png" alt="">https://github.com/teotoro</a>
-                    <a href="https://www.linkedin.com/in/teona-toronjadze/"
-                        target="_blank"><img src="img/free-linkedin-icon-112-thumb.png" alt="">https://www.linkedin.com/in/teona-toronjadze/ </a>
-                </address>
-            </div>
-            <div class="education_wrapper">
-                <h2>Education</h2>
-                <ul>
+
+        <main class="main_wrapper">
+            <section class="intro">
+                <div class="about_me">
+                    <h1>Hello I'm <span class="span_bold">Teo Toro Frontend</span> <span
+                            class="span_developer">developer</span></h1>
+                    <p>I decided to change my profession a while ago and actively focused on learning Front-End
+                        Development
+                        from the online resources. I am motivated and hard-working person, looking for new challenges.
+                    </p>
+                </div>
+                <div class="photo_wrapper">
+                    <img src="assets/img/avatar1.png" alt="photo">
+                </div>
+            </section>
+            <section class="social">
+                <ul class="social_list">
                     <li>
-                        <h3>Business and Technology University</h3>
-                        <p>Front-end Development</p>
+                        <a href="https://github.com/teotoro" target="_blank"><img src="assets/social/github.svg"
+                                alt="github-icon"></a>
                     </li>
                     <li>
-                        <h3>GITA, ICT Trainings</h3>
-                        <p>JavaScript and Front-End Frameworks Course</p>
+                        <a href="https://www.linkedin.com/in/teona-toronjadze/" target="_blank"><img
+                                src="assets/social/linkedin.svg" alt="linkedin-icon"></a>
                     </li>
                     <li>
-                        <h3>www.udemy.com</h3>
-                        <p>The Complete 2022 Web Development Bootcamp</p>
-                    </li>
-                    <li>
-                        <h3>www.freecodecamp.org</h3>
-                        <p>Responsive Web Design </p>
-                    </li>
-                    <li>
-                        <h3>www.freecodecamp.org</h3>
-                        <p>Front End Development Libraries</p>
-                    </li>
-                    <li>
-                        <h3>www.freecodecamp.org</h3>
-                        <p>JavaScript Algorithm and Data Structures</p>
-                    </li>
-                    <li>
-                        <h3>Ivane Javakhishvili Tbilisi state university</h3>
-                        <p>Master of Law</p>
+                        <a href="https://www.twitter.com/" target="_blank"><img src="assets/social/twitter.svg"
+                                alt="x-icon"></a>
                     </li>
                 </ul>
-            </div>
-            <div class="skills_wrapper">
-                <h2>Skills</h2>
-                <ul>
-                    <li>HTML/CSS</li>
-                    <li>JavaScript</li>
-                    <li>React (basic knowledge)</li>
-                    <li>PHP (basic knowledge)</li>
-                    <li>Research and Problem Solving</li>
-                    <li>Teamwork and Communication</li>
-                    <li>Time Management</li>
-                    <li>Punctual and Ethical</li>
-                    <li>Willingness to learn</li>
+            </section>
+            <section id="skills">
+                <h2>My <span class="span_bold">Skills</span> </h2>
+                <ul class="skills_list">
+                    <li><img src="assets/skills/html.png" alt="html-icon"></li>
+                    <li><img src="assets/skills/css.png" alt="css-icon"></li>
+                    <li><img src="assets/skills/sass.png" alt="sass-icon"></li>
+                    <li><img src="assets/skills/bootstrap.png" alt="bootstrap-icon"></li>
+                    <li><img src="assets/skills/js.png" alt="js-icon"></li>
+                    <li><img src="assets/skills/vuejs.png" alt="vuejs-icon"></li>
+                    <li><img src="assets/skills/git.png" alt="git-icon"></li>
                 </ul>
-            </div>
-        </div>
+
+            </section>
+
+        </main>
+
     </div>
+    <footer id="contact">
+        <address class="contact_info">
+            <a href="tel:+995123456789">+995123456789</a>
+            <a href="mailto:toronajdze.teona@gmaill.com">toronajdze.teona@gmaill.com</a>
+        </address
+        <p>&copy; Toro</p>
+    </footer>
 
 </body>
 
